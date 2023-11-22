@@ -1,0 +1,46 @@
+/* components/modal/index.css */
+
+.modal-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    background-color: #fff;
+    padding: 20px;
+    box-sizing: border-box; /* Ensure padding is included in width and height */
+  }
+  
+  .modal {
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    height: auto;
+    width: 100%;
+  }
+  
+  .modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .modal-title {
+    font-size: 22px;
+    font-weight: bold;
+    color: #3c2e27;
+  }
+  
+  .back-button {
+    font-size: 16px;
+    color: #3c2e27;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  /* Add responsive styles as needed */
+  

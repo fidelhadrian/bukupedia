@@ -1,38 +1,72 @@
-.App {
-  text-align: center;
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Font Family */
+body {
+  font-family: 'Times New Roman', Times, serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Main Container */
+main {
+  padding: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Card Container */
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center; /* Rata tengah secara horizontal */
+  align-items: flex-start; /* Posisi awal (flex-start) secara vertikal */
+}
+
+/* Title Style */
+.title {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+/* Input Style */
+input {
+  width: 100%;
+  max-width: 300px;
+  border: 1px solid #e5e5e5;
+  border-radius: 6px;
+  padding: 10px;
+  margin-bottom: 16px;
+}
+
+/* Header Style */
+header {
+  height: 80px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: left;
+  justify-content: space-evenly;
+  background-color: #6d1f09; /* Menggunakan warna dari color palette */
+  color: #eee4d0; /* Menggunakan warna dari color palette */
+  margin-bottom: 16px;
 }
 
-.App-link {
-  color: #61dafb;
+header h2 {
+  font-size: 24px;
+  font-weight: bold;
+  padding-left: 16px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  /* Adjust styles for smaller screens */
+  .card-container {
+    justify-content: flex-start; /* Rata tengah secara horizontal */
   }
-  to {
-    transform: rotate(360deg);
+
+  .title {
+    font-size: 24px;
   }
 }

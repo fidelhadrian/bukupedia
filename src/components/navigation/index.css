@@ -1,0 +1,48 @@
+/* src/components/Navigation.css */
+
+
+.navigation {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #242424; /* Dark background color */
+  color: #ffffff; /* Light text color */
+  z-index: 1000; /* Set z-index to ensure it appears above other elements */
+}
+
+.iconWrapper {
+  text-decoration: none;
+  color: #ffffff; /* Light text color */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 8px; /* Add padding for better spacing */
+}
+
+.icon {
+  font-size: 20px; /* Adjust the font size as needed */
+  margin-bottom: 4px;
+}
+
+.active {
+  color: #ffcc00; /* Bright color for the active link */
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  /* Adjust styles for smaller screens */
+  .navigation {
+    flex-direction: row;
+    height: auto;
+    
+  }
+
+  .iconWrapper {
+    
+    border-top: 1px solid #fff; /* Add top border for mobile */
+  }
+}

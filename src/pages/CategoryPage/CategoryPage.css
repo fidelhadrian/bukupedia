@@ -1,0 +1,72 @@
+/* CategoryPage.css */
+
+.category-page {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .category-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  button {
+    padding: 10px;
+    background-color: #6d1f09;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+  }
+  
+  button:hover {
+    background-color: #ccc;
+    color: #6d1f09;
+  }
+  
+  .book-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 16px;
+    margin-top: 20px;
+  }
+  
+  .book-list > div {
+    width: 300px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    background-color: #fff;
+  }
+  
+  .book-list h3 {
+    font-size: 16px;
+    margin-bottom: 8px;
+  }
+  
+  .pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 16px;
+    margin-bottom: 30px;
+  }
+  
+  .pagination button {
+    padding: 8px 12px;
+    margin: 0 4px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    cursor: pointer;
+    outline: none;
+    color:#6d1f09 ;
+  }
+  
+  .pagination button.active {
+    background-color: #6d1f09;
+    color: #fff;
+  }
+  

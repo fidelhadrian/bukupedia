@@ -1,0 +1,66 @@
+/* LandingPage.css */
+.hidden {
+  display: none;
+}
+
+main {
+  text-align: center;
+  padding: 20px;
+}
+
+input {
+  width: 70%; /* Adjust the width as needed */
+  max-width: 300px;
+  border: 1px solid #e5e5e5;
+  border-radius: 6px;
+  padding: 10px;
+  margin-bottom: 16px;
+  display: inline-block;
+}
+
+.title {
+  font-size: 18px; /* Adjust the font size as needed */
+  margin-bottom: 8px;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.pagination {
+  position:flex;
+  bottom:50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 16px;
+  margin-bottom: 30px; 
+}
+
+.pagination button {
+  padding: 8px 12px;
+  margin: 0 4px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  cursor: pointer;
+  outline: none;
+}
+
+.pagination button.active {
+  background-color: #6d1f09;
+}
+
+.pagination button.active {
+  background-color: #6d1f09;
+  color: #fff;
+}
+
+.not-found {
+  font-size: 18px;
+  color: #6d1f09;
+  margin-top: 20px;
+}
